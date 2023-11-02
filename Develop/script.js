@@ -10,7 +10,7 @@ $(document).ready(function() {
   const currentTime = dayjs().hour();
   const timeBlocks = $("#time-blocks");
   const saveBtn = timeBlocks.find(".saveBtn");
-
+  const textBox = timeBlocks.find("textarea");
 
   timeBlocks.children().each(function() {
     const timeBlock = $(this);
@@ -25,6 +25,7 @@ $(document).ready(function() {
     } else {
       timeBlock.addClass("past");
       saveBtn.prop("disabled", true);
+      textBox.prop("disabled", true)
     }  
 });
 
