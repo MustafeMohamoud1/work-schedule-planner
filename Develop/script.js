@@ -4,15 +4,13 @@
 $(document).ready(function() { 
 
   
-  const currentDayEl = $("#currentday")
+  const currentDayEl = $("#currentDay")
   const currentDay = dayjs();
   $("#currentDay").text(currentDay.format("dddd, MMMM D, YYYY"));
-
   const currentTime = dayjs().hour();
   const timeBlocks = $("#time-blocks");
-  console.log(currentTime);
+  const saveBtn = timeBlocks.find(".saveBtn");
 
-  
 
   timeBlocks.children().each(function() {
     const timeBlock = $(this);
@@ -20,10 +18,13 @@ $(document).ready(function() {
 
     if (hour > currentTime) {
       timeBlock.addClass("future");
+      saveBtn.prop("disabled", false);
     } else if (hour === currentTime) {
       timeBlock.addClass("present");
+      saveBtn.prop("disabled", false);
     } else {
       timeBlock.addClass("past");
+      saveBtn.prop("disabled", true);
     }  
 });
 
