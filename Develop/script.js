@@ -3,10 +3,16 @@
 // in the html. DONE
 $(document).ready(function() { 
 
-  const timeBlocks = $("#time-blocks");
-  const currentDay = dayjs();;
+  
+  const currentDayEl = $("#currentday")
+  const currentDay = dayjs();
+  $("#currentDay").text(currentDay.format("dddd, MMMM D, YYYY"));
+
   const currentTime = dayjs().hour();
+  const timeBlocks = $("#time-blocks");
   console.log(currentTime);
+
+  
 
   timeBlocks.children().each(function() {
     const timeBlock = $(this);
