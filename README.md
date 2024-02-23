@@ -1,13 +1,33 @@
-My workday Planner:
+Work Day Scheduler
 
-Overview
-I'm tasked with creating a workday planner with JavaScript, Jquery, Day.JS, HTML, and CSS. The planner should allow the user to type in the hour slot whatever they wish and save it using the save button:
+Overview:
 
-When I open the app I can see the current hour as well as all the hour slots
+The Work Day Scheduler is a simple web application designed to help users organize their work day by scheduling tasks in hourly time blocks. It provides an intuitive interface for entering and saving tasks for each hour, with dynamic styling to indicate past, present, and future time blocks.
 
-When I click the text area I can type in event details.
+Features:
 
-When I click the
+- Intuitive interface for scheduling tasks by the hour.
+- Dynamic styling to differentiate past, present, and future time blocks.
+- Easy-to-use with a clean and responsive design.
 
 
-Possible Challenges:
+Installation:
+
+- Clone the repository to your local machine:
+git clone https://github.com/your-username/work-day-scheduler.git
+
+- Open the project directory:
+cd work-day-scheduler
+
+- Open the index.html file in your preferred web browser.
+
+Usage:
+
+Open index.html in your web browser.
+Enter your tasks in the respective time blocks.
+Save tasks by clicking the save button.
+Styling will indicate past, present, and future time blocks.
+Your tasks will be saved locally and persist after a page refresh.
+
+Deployed site:
+https://mustafemohamoud1.github.io/work-schedule-planner/
