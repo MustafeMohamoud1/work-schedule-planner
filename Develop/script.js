@@ -23,7 +23,7 @@ $(document).ready(function () {
     } else {
       timeBlock.addClass("past");
       saveBtn.prop("disabled", true);
-      textBox.prop("disabled", true);
+      timeBlock.find("textarea").prop("disabled", true);
     }
 
     // Event listener for saveBtn elements
@@ -57,7 +57,7 @@ $(document).ready(function () {
 });
 
 
-
+console.log()
 
 
 // TODO: Add a listener for click events on the save button. This code should
