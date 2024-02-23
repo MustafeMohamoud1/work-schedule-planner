@@ -47,9 +47,9 @@ $(document).ready(function () {
       // Check if there is a saved value
       if (savedText) {
         // Set the value of the corresponding textarea
-        const textarea = document.getElementById(`textbox${hour}`);
+        const textarea = $(`#textbox${hour} textarea`);
         if (textarea) {
-          textarea.value = savedText;
+          textarea.val(savedText);
         }
       }
     }
@@ -57,7 +57,7 @@ $(document).ready(function () {
 });
 
 
-console.log()
+
 
 
 // TODO: Add a listener for click events on the save button. This code should
